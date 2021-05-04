@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Membership</string>
+    <string name="id">ID</string>
+    <string name="pw">PW</string>
+    <string name="button">Button</string>
+    <string name="btnConfirm">확인</string>
+    <string name="textName">이름</string>
+    <string name="titleGender">성별</string>
+    <string name="textGender">남, 여</string>
+    <string name="titleHeight">키</string>
+    <string name="textHeight">cm</string>
+    <string name="titleWeight">몸무게</string>
+    <string name="textWeight">kg</string>
+    <string name="btnRegister">가입하기</string>
+</resources>
