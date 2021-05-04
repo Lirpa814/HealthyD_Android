@@ -68,7 +68,7 @@ class SubActivity : AppCompatActivity() {
 
             postInfoService.postInfo(textName, textGender, textHeight, textWeight).enqueue(object: Callback<Info> {
                 override fun onFailure(call: Call<Info>, t: Throwable) {
-                    TODO("Not yet implemented")
+                    Log.v("Fail","Regist Fail")
                 }
 
                 override fun onResponse(call: Call<Info>, response: Response<Info>) {
