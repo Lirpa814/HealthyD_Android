@@ -45,6 +45,10 @@ class SubActivity : AppCompatActivity() {
                         dialog.setTitle("알림!")
                         dialog.setMessage(info?.name + "\n가입을 진행해주세요.")
                         dialog.show()
+
+                        textGender.setText(" ")
+                        textHeight.setText(" ")
+                        textWeight.setText(" ")
                     }
                     else {
                         var dialog = AlertDialog.Builder(this@SubActivity)
