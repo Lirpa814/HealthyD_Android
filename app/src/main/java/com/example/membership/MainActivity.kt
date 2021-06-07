@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_sub.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -26,13 +27,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
+
         var retrofit = Retrofit.Builder()
                 .baseUrl("http://192.168.0.2:8000")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
+        var postInfo = retrofit.create(PostInfoService::class.java)
         var loginService = retrofit.create(LoginService::class.java)
 
+        location_btn.setOnClickListener{
+            var locationWe = location.text.toString()
+
+        }
 
         btnLogin.setOnClickListener {
             var textId = textID.text.toString()
@@ -60,6 +69,8 @@ class MainActivity : AppCompatActivity() {
                     sceneConvert()
                 }
             })
+
+
         }
     }
 }
